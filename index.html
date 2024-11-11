@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquieries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Atenas Arita</div>
+        <div>
+            <ul class="navigation-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">my projects</a></li>
+                <li><a href="#contact">contact info</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="menu-nav">
+        <div class="logo">Atenas Arita</div>
+        <div class="select-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></spn>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">my projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact info</a></li>
+            </div>
+        </div>
+    </nav>  
+    <section id="profile">
+        <div class="section_profile-pic">
+            <img src="./assets/profile-pic-1-modified.png" alt="Profile Picture Atenas Arita"/>
+        </div>
+        <div class="section_text">
+            <p class="section__text__p1"> Hello! I'm</p>
+            <h1 class="title"> Atenas Arita</h1>
+            <p class="section__text__p2"> Engineering Student </p>
+    
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="window.open('./assets/resume-example.pdf')"
+                >Download CV
+                </button>
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="location.href='./#contact'"
+                >Contact Info
+                </button>
+            </div>
+    
+            <!-- Contact Icons -->
+            <div class="contact-container">
+                <img 
+                    src="./assets/linkedin.png" alt="My LinkedIn profile"
+                    class="icon" 
+                    onclick="location.href='https://linkedin.com/in/atenas-lucía-arita-garcía-430331294'"/>
+                <img 
+                    src="./assets/github.png" alt="My Github profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/atenasarita'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1"> dive deeper!</p>
+        <h1 class="title"> About me</h1>
+        <div class="section-container">
+            <div class="section-pic_container">
+                <img src="./assets/about-pic-modified.png" 
+                alt="Profile Picture Atenas Arita"
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/graduacion.png" 
+                            alt="Education Icon"
+                            class = "icon"/>
+                        <h3>Education</h3>
+                        <p>Currently attending Tecnológico de Monterrey <br> B.S. in Computer Science and Technology Engineering </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I graduated from high school in Tegucigalpa, Honduras, earning a Diploma in Sciences and Humanities. 
+                        Currently, I am pursuing my bachelor’s degree in Monterrey, Mexico, in a program designed to drive 
+                        technological innovation through software development. This program aims to advance society by creating 
+                        systems that enhance quality of life, improve organizational competitiveness, and promote sustainable development in Latin America. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1"> check out my recent</p>
+        <h1 class="title"> Projects </h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="project-details-container">
+                        <img src="./assets/file.png" 
+                            alt="Education Icon"
+                            class="project-img"/>
+                        <h2>Education</h2>
+                        <p>Currently attending Tecnológico de Monterrey</p>
+                    </div>
+
+                    <div class="project-details-container">
+                        <img src="./assets/file.png" 
+                            alt="Education Icon"
+                            class="project-img"/>
+                        <h2>Education</h2>
+                        <p>Currently attending Tecnológico de Monterrey </p>
+                    </div>
+
+                    <div class="project-details-container">
+                        <img src="./assets/file.png" 
+                            alt="Education Icon"
+                            class="project-img"/>
+                        <h2>Education</h2>
+                        <p>Currently attending Tecnológico de Monterrey </p>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
