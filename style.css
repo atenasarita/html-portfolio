@@ -206,14 +206,12 @@ section{
     border-radius: 2rem;
 }
 
-.btn-color-1,
-.btn-color-2{
+.btn-color{
     color: black; 
     border: 2px solid rgb(191, 144, 160);;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover{
+.btn-color:hover{
     cursor: pointer;
     background-color: rgb(191, 144, 160);
 }
@@ -221,6 +219,13 @@ section{
 /* ABOUT SECTION*/
 #about{
     position: relative;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-containers{
@@ -242,8 +247,7 @@ section{
 }
 
 .details-container{
-    padding: 1rem;
-    flex: 1;
+    padding: 1.5rem;
     background: white;
     border-radius: 2rem;
     border: black 0.1rem solid;
@@ -288,10 +292,14 @@ section{
     border: black 0.1rem solid;
     border-color: rgb(191, 144, 160);
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .project-img{
     width: 300px;
     border-radius: 2rem;
+}
+
+.project-title{
+    margin-bottom: 0.5rem;
 }
