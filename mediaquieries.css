@@ -171,4 +171,17 @@
     .btn{
         margin-bottom: 1rem;
     }
+
+    #contact{
+        height: 40vh;
+    }
+
+    .contact-outer-section{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .contact-info-container{
+        margin: 0;
+    }
 }
